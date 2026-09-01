@@ -1,0 +1,133 @@
+import { FieldType } from '@teable/core';
+import { ExpandRecorder } from '@teable/sdk/components';
+import { ShareViewContext, useRichViewCardFields } from '@teable/sdk/context';
+import {
+  useTableId,
+  useView,
+  useFields,
+  useTablePermission,
+  usePersonalView,
+} from '@teable/sdk/hooks';
+import type { AttachmentField, GalleryView } from '@teable/sdk/model';
+import { useRouter } from 'next/router';
+import { useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { GalleryContext } from './GalleryContext';
+
+export const GalleryProvider = ({ children }: { children: ReactNode }) => {
+  const tableId = useTableId();
+  const view = useView() as GalleryView | undefined;
+  const { personalViewCommonQuery } = usePersonalView();
+  const { shareId } = useContext(ShareViewContext) ?? {};
+  const { sort, filter } = view ?? {};
+  const permission = useTablePermission();
+  const allFields = useFields({ withHidden: true, withDenied: true });
+  const { coverFieldId, isCoverFit, isFieldNameHidden } = view?.options ?? {};
+  const [expandRecordId, setExpandRecordId] = useState<string>();
+  const router = useRouter();
+  const {
+    recordId: routerRecordId,
+    showHistory: routerShowHistory,
+    showComment: routerShowComment,
+  } = router.query;
+  const showHistory = routerShowHistory === 'true';
+  const showComment = { true: true, false: false }[routerShowComment as string];
+
+  useEffect(() => {
+    setExpandRecordId(routerRecordId as string);
+  }, [routerRecordId, setExpandRecordId]);
+
+  const recordQuery = useMemo(() => {
+    const { ignoreViewQuery } = personalViewCommonQuery ?? {};
+    const baseQuery = {
+      orderBy: sort?.sortObjs,
+      filter: filter,
+    };
+
+    if (shareId) return baseQuery;
+
+    if (ignoreViewQuery) {
+      return {
+        ...baseQuery,
+        ignoreViewQuery,
+      };
+    }
+  }, [shareId, sort, filter, personalViewCommonQuery]);
+
+  const galleryPermission = useMemo(() => {
+    return {
+      cardCreatable: Boolean(permission['record|create']),
+      cardEditable: Boolean(permission['record|update']),
+      cardDeletable: Boolean(permission['record|delete']),
+      cardDraggable: Boolean(permission['record|update'] && permission['view|update']),
+      cardCommentCreatable: Boolean(permission['record|comment']),
+    };
+  }, [permission]);
+
+  const coverField = useMemo(() => {
+    if (!coverFieldId) return;
+    return allFields.find(
+      ({ id, type }) => id === coverFieldId && type === FieldType.Attachment
+    ) as AttachmentField | undefined;
+  }, [coverFieldId, allFields]);
+
+  const { titleField: primaryField, displayFields, canRenderView } = useRichViewCardFields();
+
+  const value = useMemo(() => {
+    return {
+      recordQuery,
+      isCoverFit,
+      isFieldNameHidden,
+      permission: galleryPermission,
+      coverField,
+      primaryField,
+      displayFields,
+      setExpandRecordId,
+    };
+  }, [
+    recordQuery,
+    isCoverFit,
+    isFieldNameHidden,
+    galleryPermission,
+    coverField,
+    primaryField,
+    displayFields,
+    setExpandRecordId,
+  ]);
+
+  const onClose = () => {
+    setExpandRecordId(undefined);
+    const {
+      recordId: _recordId,
+      showHistory: _showHistory,
+      showComment: _showComment,
+      ...resetQuery
+    } = router.query;
+    router.push(
+      {
+        pathname: router.pathname,
+        query: resetQuery,
+      },
+      undefined,
+      {
+        shallow: true,
+      }
+    );
+  };
+
+  return (
+    <GalleryContext.Provider value={value}>
+      {canRenderView ? children : null}
+      {tableId && (
+        <ExpandRecorder
+          tableId={tableId}
+          viewId={view?.id}
+          recordId={expandRecordId}
+          recordIds={expandRecordId ? [expandRecordId] : []}
+          onClose={onClose}
+          showHistory={showHistory}
+          showComment={showComment}
+        />
+      )}
+    </GalleryContext.Provider>
+  );
+};

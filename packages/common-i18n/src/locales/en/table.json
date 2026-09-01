@@ -1,0 +1,1328 @@
+{
+  "toolbar": {
+    "comingSoon": "Coming soon",
+    "viewFilterInShare": "This view is being used in a view share link. Modifications to the view configuration will also change the view share link.",
+    "createFieldButtonText": "Create a new <0/> field",
+    "others": {
+      "share": {
+        "label": "Share",
+        "statusLabel": "Sharing",
+        "noPermission": "No permission to share view",
+        "shareLink": "Share link",
+        "shareId": "Share ID",
+        "copied": "Copied",
+        "genLink": "Generate new link",
+        "allowCopy": "Allow viewers to copy data out of this view",
+        "allowEdit": "Allow viewers to edit records in this view",
+        "showAllFields": "Show all fields in expanded records",
+        "restrict": "Restrict by password",
+        "tips": "People who have the link can see the view.",
+        "passwordTitle": "Enter a password",
+        "passwordTips": "Password restrictions for accessing shared views",
+        "embed": "Embed",
+        "embedPreview": "Embed preview",
+        "hideToolbar": "Hide toolbar",
+        "URLSetting": "URL parameters config",
+        "URLSettingDescription": "Adjusting the following settings will not affect the shared links. You need to copy the link with new parameters to make it take effect",
+        "cancel": "Cancel",
+        "save": "Save",
+        "publishMenu": "Publish menu"
+      },
+      "extensions": {
+        "label": "Extensions",
+        "graph": "Graph"
+      },
+      "api": {
+        "label": "API",
+        "restfulApi": "Restful API",
+        "databaseConnection": "Database connection",
+        "title": "API Access",
+        "aiContext": "Copy to AI",
+        "advanced": "Advanced",
+        "generatingToken": "Generating...",
+        "aiContextTitle": "AI-Friendly API Documentation",
+        "aiContextDescriptionNoToken": "Copy this documentation to your AI assistant (ChatGPT, Claude, etc.). Click 'Generate Token' to create an API token that will be automatically filled in.",
+        "aiContextDescriptionWithToken": "Copy this documentation to your AI assistant (ChatGPT, Claude, etc.). A permission-restricted API token has been generated and filled in.",
+        "generateToken": "Generate Token",
+        "confirmTitle": "Create API Token",
+        "confirmDescription": "This will create a new API token with the following permissions for this base:",
+        "scopeTableRead": "Read table info",
+        "scopeFieldRead": "Read fields",
+        "scopeRead": "Read records",
+        "scopeCreate": "Create records",
+        "scopeUpdate": "Update records",
+        "scopeDelete": "Delete records",
+        "confirmExpiry": "The token will be valid for 1 year.",
+        "confirmButton": "Confirm & Create",
+        "tokenInfo": "Token expires: {{expiry}}",
+        "tokenCreatedSuccess": "Token created successfully! Click copy to use it with your AI assistant.",
+        "copied": "Copied!",
+        "copy": "Copy",
+        "copyAIDoc": "Copy AI Doc",
+        "aiDocPreview": "AI Doc Preview",
+        "manageToken": "Manage Token",
+        "openInNewTab": "Open in New Tab",
+        "advancedDesc": "Open the advanced API query builder for more customization options.",
+        "openAdvanced": "Open Query Builder",
+        "queryBuilderTitle": "API Query Builder",
+        "queryBuilderDesc": "Visually configure filters, sorting, and other parameters to generate ready-to-run API request code.",
+        "viewApiDocs": "View Full API Docs"
+      },
+      "personalView": {
+        "personal": "Personal",
+        "collaborative": "Collaborative",
+        "tip": "After enabling, the view settings will only take effect for you personally",
+        "dialog": {
+          "title": "Exit personal mode",
+          "description": "The personal view configuration will be restored to the real-time collaboration state, you can also save the personal view settings and synchronize them to everyone",
+          "cancelText": "Exit and sync",
+          "confirmText": "Confirm exit"
+        }
+      }
+    }
+  },
+  "welcome": {
+    "title": "Welcome",
+    "emptyTitle": "Start building your base",
+    "description": "Click the \"+\" button in the sidebar to add resources",
+    "help": "Visit the <HelpCenter /> for more information",
+    "helpCenter": "Help center"
+  },
+  "field": {
+    "fieldManagement": "Field management",
+    "fieldManagementDesc": "Detailed properties for all fields of the current table",
+    "advancedProps": "Advanced properties",
+    "hide": "hide",
+    "default": {
+      "singleLineText": {
+        "title": "Label"
+      },
+      "longText": {
+        "title": "Notes"
+      },
+      "number": {
+        "title": "Number",
+        "formatType": "Format type",
+        "currencySymbol": "Currency symbol",
+        "defaultSymbol": "$",
+        "precision": "Precision",
+        "decimalExample": "Decimal (1.0)",
+        "currencyExample": "Currency ($100)",
+        "percentExample": "Percent (20%)"
+      },
+      "singleSelect": {
+        "title": "Status",
+        "options": {
+          "todo": "To do",
+          "inProgress": "In progress",
+          "done": "Done"
+        }
+      },
+      "multipleSelect": {
+        "title": "Tags"
+      },
+      "attachment": {
+        "title": "Attachments"
+      },
+      "user": {
+        "title": "Collaborator"
+      },
+      "date": {
+        "title": "Date",
+        "dateFormatting": "Date formatting",
+        "timeFormatting": "Time formatting",
+        "timeZone": "Time zone",
+        "yearMonth": "Year/month",
+        "monthDay": "Month/day",
+        "year": "Year",
+        "month": "Month",
+        "day": "Day",
+        "local": "Local",
+        "friendly": "Friendly",
+        "us": "US",
+        "european": "European",
+        "asia": "Asia",
+        "custom": "Custom",
+        "12Hour": "12 hour",
+        "24Hour": "24 hour",
+        "noDisplay": "No display"
+      },
+      "autoNumber": {
+        "title": "ID"
+      },
+      "createdTime": {
+        "title": "Created time"
+      },
+      "lastModifiedTime": {
+        "title": "Last modified time"
+      },
+      "createdBy": {
+        "title": "Created by"
+      },
+      "lastModifiedBy": {
+        "title": "Last modified by"
+      },
+      "rating": {
+        "title": "Rating"
+      },
+      "checkbox": {
+        "title": "Done"
+      },
+      "button": {
+        "title": "Button",
+        "label": "Button label",
+        "color": "Button color",
+        "limitCount": "Limit clicks",
+        "resetCount": "Allow reset",
+        "maxCount": "Max clicks",
+        "automation": "Automation",
+        "customAutomation": "Custom automation",
+        "clickConfirm": "Confirm before clicking",
+        "confirmTitle": "Title",
+        "confirmDescription": "Content",
+        "confirmButtonText": "Confirm button text"
+      },
+      "formula": {
+        "title": "Calculation",
+        "formula": "Formula"
+      },
+      "lookup": {
+        "title": "{{lookupFieldName}} (from {{linkFieldName}})"
+      },
+      "conditionalLookup": {
+        "title": "{{lookupFieldName}} (filtered from {{tableName}})"
+      },
+      "rollup": {
+        "title": "{{lookupFieldName}} Rollup (from {{linkFieldName}})",
+        "rollup": "Rollup",
+        "selectAnRollupFunction": "Select an rollup function",
+        "func": {
+          "and": "AND",
+          "arrayCompact": "ARRAYCOMPACT",
+          "arrayJoin": "ARRAYJOIN",
+          "arrayUnique": "ARRAYUNIQUE",
+          "average": "AVERAGE",
+          "concatenate": "CONCATENATE",
+          "count": "COUNT",
+          "countA": "COUNTA",
+          "countAll": "COUNTALL",
+          "max": "MAX",
+          "min": "MIN",
+          "or": "OR",
+          "sum": "SUM",
+          "xor": "XOR"
+        },
+        "funcDesc": {
+          "and": "Returns true if all the values are true",
+          "arrayCompact": "Removes empty strings and null values from the array. Keeps 'false' and strings that contain one or more blank characters.",
+          "arrayJoin": "Join all the values into a single comma-separated string.",
+          "arrayUnique": "Return only unique items.",
+          "average": "Mean average of the values.",
+          "concatenate": "Joins together the text values into a single text value.",
+          "count": "Count only non-empty numeric values. If you want to count all records, use COUNTALL.",
+          "countA": "Count the number of non-empty values. This function counts both numeric and text values.",
+          "countAll": "counts all values including blank records.",
+          "max": "Returns the largest of the given numbers.",
+          "min": "Returns the smallest of the given numbers.",
+          "or": "Returns true if any one of the values is true.",
+          "sum": "Sum together the values.",
+          "xor": "Returns true if and only if odd number of values are true."
+        }
+      },
+      "conditionalRollup": {
+        "title": "{{lookupFieldName}} conditional rollup",
+        "description": "Aggregate values from another table using filters."
+      }
+    },
+    "editor": {
+      "addField": "Add field",
+      "editField": "Edit field",
+      "insertField": "Insert field",
+      "graph": "Graph",
+      "defaultValue": "Default value",
+      "reset": "Reset",
+      "fieldUpdated": "Field has been updated",
+      "fieldCreated": "Field has been created",
+      "confirmFieldChange": "Confirm Field Change",
+      "areYouSurePerformIt": "Are you sure you want to perform it?",
+      "addDescription": "Add description",
+      "dbFieldName": "DB field name",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe this field (optional)",
+      "type": "Type",
+      "showAs": "Show as",
+      "color": "Color",
+      "number": "Number",
+      "chartBar": "Chart bar",
+      "chartLine": "Chart line",
+      "ring": "Ring",
+      "bar": "Bar",
+      "text": "Text",
+      "url": "Url",
+      "email": "Email",
+      "phone": "Phone",
+      "maxNumber": "Max number",
+      "showNumber": "Show number",
+      "autoFillDate": "Auto fill with current date",
+      "createSymmetricLink": "Create a back link field in the link table",
+      "allowLinkMultipleRecords": "Allow multiple select",
+      "allowLinkToDuplicateRecords": "Allows records to be selected more than once",
+      "allowSymmetricFieldLinkMultipleRecords": "Allows records to be selected more than once",
+      "oneToOne": "one-to-one",
+      "oneToMany": "one-to-many",
+      "manyToOne": "many-to-one",
+      "manyToMany": "many-to-many",
+      "self": "Self",
+      "selectTable": "Select table...",
+      "selectBase": "Select a base...",
+      "linkFromAnotherBase": "Link from another base",
+      "inSelfLink": "in self-link",
+      "betweenTwoTables": "between two tables",
+      "tips": "Tips",
+      "linkTipMessage": "This configuration represents a<br></br> <b>{{relationship}}</b> relationship <span>{{linkType}}</span>",
+      "style": "Style",
+      "maximum": "Maximum",
+      "addOption": "Add option",
+      "allowMultiUsers": "Allow adding multiple users",
+      "notifyUsers": "Notify users once they're selected",
+      "searchTable": "Search table...",
+      "calculating": "Calculating...",
+      "doSaveChanges": "Do you want to save the changes you made?",
+      "linkFieldToLookup": "Linked record field to use for lookup",
+      "lookupToTable": "Field from <bold>{{tableName}}</bold> you want to look up",
+      "rollupToTable": "Field from <bold>{{tableName}}</bold> you want to roll up",
+      "selectField": "Select a field...",
+      "lastModifiedScope": "Fields",
+      "lastModifiedAll": "All editable fields",
+      "lastModifiedSpecific": "Specific fields",
+      "lastModifiedSelect": "Tracked fields",
+      "lastModifiedSelectAll": "Track all fields",
+      "noEditableFields": "No editable fields available",
+      "conditionalRollup": {
+        "fieldMapping": "Add field mapping",
+        "selectBaseField": "Select base field",
+        "noMappings": "No field mappings configured yet."
+      },
+      "conditionalLookup": {
+        "sortLimitToggleLabel": "Sort linked records and limit the number of matches",
+        "sortLabel": "Sort results",
+        "orderPlaceholder": "Select an order",
+        "clearSort": "Clear sort",
+        "limitLabel": "Maximum records to include",
+        "limitPlaceholder": "Leave blank to include all matches",
+        "limitHint": "We only keep up to {{limit}} matching records.",
+        "sortMissingWarningTitle": "Sorting field unavailable",
+        "sortMissingWarningDescription": "The field that powered this sort was deleted. Results ignore the sort and only enforce the limit."
+      },
+      "linkTable": "Link table",
+      "linkBase": "Link base",
+      "tableNoPermission": "No permission table",
+      "baseNoPermission": "No permission base",
+      "noLinkTip": "No linked records to look up. Add a Link to another record field, then try to configure your lookup again.",
+      "fieldValidationRules": "Field value validation rules",
+      "enableValidateFieldUnique": "Unique values only",
+      "enableValidateFieldNotNull": "Required",
+      "knowMore": "know more",
+      "linkFieldKnowMoreLink": "https://www.anxinlirong.com",
+      "showByField": "Show records by field",
+      "filterByView": "Filter records by view",
+      "filter": "Filter records",
+      "hideFields": "Hide fields",
+      "moreOptions": "More options",
+      "allowNewOptionsWhenEditing": "Allow new options when editing",
+      "deleteField": {
+        "title": "Delete Field",
+        "simpleConfirm": "Are you sure you want to delete the field <b>{{fieldName}}</b>?",
+        "withDependencies": "Deleting the field <b>{{fieldName}}</b> will affect the following fields:",
+        "affectedFields": "Affected fields:",
+        "fieldsToDelete": "Fields to delete ({{count}})",
+        "unviewedHint": "{{count}} field(s) not reviewed",
+        "deleteCount": "Delete {{count}} fields",
+        "noAffectedFields": "This field is not referenced by other fields."
+      }
+    },
+    "subTitle": {
+      "link": "Link to records in the table you choose",
+      "singleLineText": "Enter text, or prefill each new cell with a default value.",
+      "longText": "Enter multiple lines of text.",
+      "attachment": "Add or AI generate images, or upload documents or other files to be viewed or downloaded.",
+      "checkbox": "Check or uncheck to indicate status.",
+      "multipleSelect": "Select one or more predefined options in a list.",
+      "singleSelect": "Select one predefined option from a list, or prefill each new cell with a default option.",
+      "user": "Add an user to a record.",
+      "date": "Enter a date (e.g. 11/12/2023) or choose one from a calendar.",
+      "number": "Enter a number, or prefill each new cell with a default value.",
+      "duration": "Enter a duration of time in hours, minutes or seconds (e.g. 1:23).",
+      "rating": "Add a rating on a predefined scale.",
+      "formula": "Compute values based on fields.",
+      "rollup": "Summarize data from linked records.",
+      "conditionalRollup": "Summarize values from a linked table with conditional filters.",
+      "conditionalLookup": "Show linked values that meet your filter conditions.",
+      "count": "Count the number of linked records.",
+      "createdTime": "See the date and time each record was created.",
+      "lastModifiedTime": "See the date and time of the most recent edit to some or all fields in a record.",
+      "createdBy": "See which user created the record.",
+      "lastModifiedBy": "See which user made the most recent edit to some or all fields in a record.",
+      "autoNumber": "Automatically generate unique incremental numbers for each record.",
+      "button": "Trigger a customized action.",
+      "lookup": "See values from a field in a linked record."
+    },
+    "fieldName": "Field name",
+    "fieldNameOptional": "Field name (Optional)",
+    "fieldType": "Field type",
+    "aiConfig": {
+      "title": "AI config",
+      "type": {
+        "summary": "Summarize",
+        "translation": "Translate",
+        "extraction": "Extract information",
+        "improvement": "Improve",
+        "tag": "Smart-tag",
+        "classification": "Smart-classify",
+        "customization": "Customize",
+        "imageGeneration": "Image generation",
+        "rating": "Rating"
+      },
+      "label": {
+        "type": "AI action type",
+        "model": "AI model",
+        "targetLanguage": "Target language",
+        "sourceField": "Source field",
+        "sourceFieldForTag": "Select a field, match it with the created tags",
+        "sourceFieldForClassify": "Select a field, match it with the created classifications",
+        "attachPrompt": "Attach requirements",
+        "prompt": "Customize prompt",
+        "sourceFieldForAttachment": "Source field for attachment",
+        "imageSize": "Image size",
+        "imageQuality": "Image quality",
+        "imageCount": "Image count",
+        "aspectRatio": "Aspect ratio",
+        "resolution": "Resolution",
+        "advancedSettings": "Advanced settings"
+      },
+      "placeholder": {
+        "summarize": "Summary of the content",
+        "translate": "Translation concise and easy to understand, light-hearted",
+        "extractInfo": "Extract email, phone, name, address...",
+        "extractDate": "Extract start time",
+        "improveText": "Formal, friendly, humorous...",
+        "attachPromptForTag": "Not allowed to exceed three tags",
+        "attachPromptForClassify": "Classify \"In Progress\" as \"No Risk\"",
+        "attachPrompt": "Please enter additional requirements",
+        "prompt": "Enter / select the referenced field",
+        "type": "Select AI action",
+        "targetLanguage": "English, Chinese, French...",
+        "imageSize": "Please enter the image size",
+        "imageQuality": "Please enter the image quality",
+        "aspectRatio": "Select aspect ratio",
+        "resolution": "Select resolution",
+        "attachPromptForImageGeneration": "The image should be vivid and natural",
+        "attachPromptForRating": "Rate the image quality"
+      },
+      "imageQuality": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      },
+      "hint": {
+        "imageInputSupported": "💡 This model supports image input. You can select an attachment field to use images as reference for generation.",
+        "attachmentNotSupported": "💡 This model does not support attachment input. Only Gemini models support image-to-image generation.",
+        "singleImageOnly": "This model can only generate one image at a time"
+      },
+      "auto": "Auto",
+      "resolution": {
+        "1K": "1K (Standard)",
+        "2K": "2K (HD)",
+        "4K": "4K (Ultra HD)"
+      },
+      "autoFill": {
+        "title": "Auto update",
+        "tip": "After enabling, the current field will be updated synchronously with the content changes of the AI configuration"
+      },
+      "autoFillFieldDialog": {
+        "title": "Regenerate AI Field",
+        "description": "Will generate for {{count}} rows in the current view. Task will run in the background."
+      },
+      "autoFillConfirm": {
+        "title": "Apply AI Field Configuration",
+        "description": "Will generate for {{count}} rows in the current view. Task will run in the background.",
+        "generateMode": "Generation mode",
+        "emptyOnlyMode": "Fill empty cells only",
+        "emptyOnlyModeDesc": "Only generate for empty cells, existing content will not be overwritten",
+        "allMode": "Generate entire column",
+        "allModeDesc": "Generate for all rows, will overwrite existing content",
+        "saveOnlyMode": "Save configuration only",
+        "saveOnlyModeDesc": "Only save field configuration, no cells will be written",
+        "saveConfigOnly": "Save configuration only",
+        "generate": "Generate",
+        "fillEmptyCells": "Fill empty cells",
+        "generateAll": "Generate all",
+        "recommended": "Recommended",
+        "generateFailed": "Generate failed",
+        "taskLimited": "Due to row limit, only the first {{processedCount}} rows were processed ({{rowCount}} rows matched)",
+        "limitWarning": "Due to the 1,000 row limit per task, only the first 1,000 rows will be processed. You can run the task again to process remaining rows."
+      },
+      "action": {
+        "addAttachment": "Add attachment"
+      }
+    }
+  },
+  "table": {
+    "newTableLabel": "New table",
+    "rename": "Rename",
+    "design": "Design",
+    "tableRecordHistory": "Table record history",
+    "deleteConfirm": "Are you sure you want to delete \"{{tableName}}\" ?",
+    "dbTableName": "Table name in physical database",
+    "schemaName": "Schema name in physical database",
+    "baseInfo": "Base info",
+    "typeOfDatabase": "Type of database",
+    "descriptionForTable": "Description for this table",
+    "nameForTable": "Name for this table",
+    "deleteTip1": "Link fields linked with this table in other tables will be deleted.",
+    "deleteTip2": "This table can be restored from the trash after deletion.",
+    "operator": {
+      "createBlank": "New table",
+      "createFromIndicatorLibrary": "Create table from indicator library"
+    },
+    "indicatorLibraryDialog": {
+      "title": "Create table from indicator library",
+      "description": "Select an indicator library configured for LLTable and enter a name for the new table.",
+      "keywordLabel": "Indicator library",
+      "keywordPlaceholder": "Select indicator library",
+      "tableNameLabel": "New table name",
+      "tableNamePlaceholder": "Enter table name",
+      "loading": "Loading…",
+      "emptyList": "No indicator libraries available for LLTable",
+      "keywordRequired": "Please select an indicator library",
+      "tableNameRequired": "Please enter a table name",
+      "createSuccess": "Reference table \"{{name}}\" created",
+      "createFailed": "Failed to create table"
+    },
+    "actionTips": {
+      "copyAndPasteEnvironment": "Copy and paste only works in HTTPS or localhost",
+      "copyAndPasteBrowser": "Copy and paste not supported in this browser",
+      "copying": "Copying...",
+      "copySuccessful": "Copy successful",
+      "copyFailed": "Copy failed",
+      "pasting": "Pasting...",
+      "pasteSuccessful": "Paste successful",
+      "pasteFailed": "Paste failed",
+      "filling": "Filling...",
+      "fillSuccessful": "Fill successful",
+      "fillFailed": "Fill failed",
+      "clearing": "Clearing...",
+      "clearSuccessful": "Clear successful",
+      "clearConfirmTitle": "Clear data",
+      "clearConfirmDescription": "This action will clear {{cellCount}} cells in {{rowCount}} records. Are you sure you want to continue?",
+      "deleteRecordConfirmTitle": "Delete records",
+      "deleteRecordConfirmDescription": "This action will delete {{recordCount}} records. Are you sure you want to continue?",
+      "pasteConfirmTitle": "Perform paste",
+      "pasteConfirmDescription": "You are about to perform a paste that overwrites {{recordCount}} records. Are you sure you want to continue?",
+      "expandCommonDescription": "To fit your pasted data into the table, we need to add",
+      "expandColDescription": "{{count}} fields",
+      "expandRowDescription": "{{count}} records",
+      "paste": "Paste",
+      "deleteRecord": "Delete",
+      "clear": "Clear",
+      "conjunction": "and",
+      "deleteFieldConfirmTitle": "You will delete the following fields",
+      "deleting": "Deleting...",
+      "deleteSuccessful": "Delete successful",
+      "pasteFileFailed": "Files can only be pasted into an attachment field",
+      "copyError": {
+        "noFocus": "Please keep the page active and do not switch windows",
+        "noPermission": "You don't have permission to copy records"
+      }
+    },
+    "graph": {
+      "tableLabel": "Table label",
+      "effectCells": "May effect cells",
+      "estimatedTime": "Estimated time",
+      "linkFieldCount": "Affects the number of linked fields"
+    },
+    "integrity": {
+      "check": "Check",
+      "title": "Integrity check",
+      "loading": "Checking integrity...",
+      "allGood": "All good!",
+      "fixIssues": "Fix issues",
+      "type": "Type",
+      "message": "Error message",
+      "errorType": {
+        "ForeignTableNotFound": "ForeignTableNotFound",
+        "ForeignKeyNotFound": "ForeignKeyNotFound",
+        "SelfKeyNotFound": "SelfKeyNotFound",
+        "SymmetricFieldNotFound": "SymmetricFieldNotFound",
+        "MissingRecordReference": "MissingRecordReference",
+        "InvalidLinkReference": "InvalidLinkReference",
+        "ForeignKeyHostTableNotFound": "ForeignKeyHostTableNotFound",
+        "ReferenceFieldNotFound": "ReferenceFieldNotFound",
+        "UniqueIndexNotFound": "UniqueIndexNotFound",
+        "EmptyString": "EmptyString"
+      }
+    },
+    "index": {
+      "description": "Indexes can significantly improve search performance, especially when dealing with large amounts of data (over {{rowCount}} rows). The downside is slightly slower write operations. If you frequently perform searches or have large datasets, it's recommended to enable indexing.",
+      "repair": "repair",
+      "repairTip": "Index anomalies detected, which may cause search performance degradation. It is recommended to click the repair button to fix the index",
+      "enableIndexTip": "You are creating an index. The time required depends on the table size. During this process, the table's read and write performance may be affected. Please be patient.",
+      "globalSearchTip_limited": "Search all fields except date, checkbox and button fields, maximum {{count}} fields",
+      "globalSearchTip_infinity": "Search all fields except date, checkbox and button fields",
+      "autoIndexTip": "Your table has exceeded {{rowCount}} rows. We recommend enabling indexing to improve search performance. Please note that indexing may slightly reduce write speed. During index creation, table read/write performance might be temporarily affected. Please be patient.",
+      "enableIndex": "enable",
+      "keepAsIs": "keep as it",
+      "ignoreIndexError": "ignore"
+    },
+    "searchTips": {
+      "maxFieldTips_limited": "Exceeded the maximum {{count}} number of fields, extra fields will be ignored"
+    }
+  },
+  "import": {
+    "title": {
+      "upload": "Upload",
+      "import": "Import",
+      "localFile": "Local files",
+      "linkUrl": "Link(URL)",
+      "linkUrlInputTitle": "Add file from URL",
+      "importTitle": "Create a new table",
+      "incrementImportTitle": "Import into — ",
+      "optionsTitle": "Import option",
+      "primitiveFields": "Primitive fields",
+      "importFields": "Import field",
+      "primaryField": "Primary field",
+      "tipsTitle": "Tips",
+      "confirm": "Confirm and continue"
+    },
+    "menu": {
+      "addFromOtherSource": "Add from other sources",
+      "excelFile": "Microsoft Excel",
+      "csvFile": "CSV file",
+      "importCsvData": "Import CSV data",
+      "importExcelData": "Import Microsoft Excel data",
+      "cancel": "Cancel",
+      "leave": "Leave",
+      "downAsCsv": "Download CSV",
+      "importData": "Import data",
+      "duplicate": "Duplicate",
+      "duplicating": "Duplicating...",
+      "duplicateSuccess": "Duplicated successfully",
+      "duplicateFailed": "Failed to duplicate",
+      "includeRecords": "Include records"
+    },
+    "tips": {
+      "importWayTip": "Click or drag file to this area to upload",
+      "leaveTip": "Your data will still be imported.",
+      "fileExceedSizeTip": "This type file size exceeds the limit of",
+      "analyzing": "analyzing",
+      "importing": "Importing",
+      "notSupportFieldType": "Field type is not supported",
+      "resultEmpty": "No results found.",
+      "searchPlaceholder": "Search...",
+      "importAlert": "Once the import begins, it cannot be stopped until it is either successfully completed or terminated due to failure. The import status is displayed in the upper right corner of the table. The results of import process will be notified to you once completed. You should not update the field during the import as it may cause errors.",
+      "noTips": "I know that, don't show again"
+    },
+    "options": {
+      "autoSelectFieldOptionName": "Auto-select field types",
+      "useFirstRowAsHeaderOptionName": "Use first row as header",
+      "importDataOptionName": "Import data",
+      "sheetKey": "SheetName: ",
+      "excludeFirstRow": "Exclude first row in import"
+    },
+    "form": {
+      "defaultFieldName": "Field",
+      "error": {
+        "urlEmptyTip": "URL should not be empty!",
+        "errorFileFormat": "File format is incorrect!",
+        "uniqueFieldName": "Field name should be unique!",
+        "fieldNameEmpty": "Field name should not be empty!",
+        "atLeastAImportField": "Please set a import field at least",
+        "urlValidateTip": "Couldn't parse URL. Try a different URL!"
+      },
+      "option": {
+        "doNotImport": "Do not import"
+      }
+    }
+  },
+  "export": {
+    "menu": {
+      "exportCsv": "Download Csv"
+    }
+  },
+  "download": {
+    "allAttachments": {
+      "title": "Download All Attachments",
+      "loading": "Loading preview...",
+      "rowsWithAttachments": "{{count}} rows with attachments",
+      "totalAttachments": "{{count}} attachments",
+      "totalSize": "Total size: {{size}}",
+      "startDownload": "Start Download",
+      "confirmTitle": "Download {{count}} files",
+      "confirmDescription": "Total size: {{size}}. The files will be compressed into a zip file.",
+      "confirm": "Download",
+      "cancel": "Cancel",
+      "downloading": "Downloading...",
+      "downloadingFile": "Downloading: {{fileName}}",
+      "progress": "{{downloaded}} / {{total}}",
+      "completed": "Download completed",
+      "cancelled": "Download cancelled",
+      "noAttachments": "No attachments to download",
+      "error": "Download failed",
+      "errorPartial": "{{failedCount}} files failed to download",
+      "requireHttps": "Batch download requires HTTPS. Please access via HTTPS or localhost.",
+      "namingFieldLabel": "Attachment name prefix",
+      "groupByRow": "Archive into folders",
+      "groupByRowTip": "When a row has multiple attachments, they will be placed in the same folder; rows with only one attachment will not create a folder."
+    }
+  },
+  "grid": {
+    "prefillingRowTitle": "Add new record",
+    "prefillingRowTooltip": "Please enter the new record data below. The record will be saved automatically once you click outside this row.",
+    "presortRowTitle": "This record has been filtered or moved due to sorting rules"
+  },
+  "form": {
+    "fieldsManagement": "Fields",
+    "addAll": "Add all",
+    "removeAll": "Remove all",
+    "hideFieldTip": "Hide the field to here",
+    "unableAddFieldTip": "Unable to add this type field",
+    "removeFromFormTip": "Remove from the form",
+    "descriptionPlaceholder": "Enter from description",
+    "dragToFormTip": "Drag the field here to add it to the form",
+    "protectedFieldTip": "This field has been set as a \"required\" field, and cannot be removed in the form view. Please modify it in the field settings."
+  },
+  "kanban": {
+    "toolbar": {
+      "hideFieldName": "Hide field name",
+      "customizeCards": "Customize cards",
+      "stackedBy": "Stacked by <0/>",
+      "chooseStackingField": "Choose a stacking field",
+      "chooseStackingFieldDescription": "Which field would you like to use for this kanban view? Your records will be stacked based on this field.",
+      "hideEmptyStack": "Hide empty stack",
+      "imageSetting": "Image setting",
+      "fit": "Fit",
+      "noImage": "No image",
+      "chooseAttachmentField": "Choose attachment field"
+    },
+    "stack": {
+      "addStack": "Add stack",
+      "noCards": "No cards",
+      "uncategorized": "Uncategorized"
+    },
+    "stackMenu": {
+      "collapseStack": "Collapse stack",
+      "renameStack": "Rename stack",
+      "deleteStack": "Delete stack"
+    },
+    "cardMenu": {
+      "insertCardAbove": "Insert card above",
+      "insertCardBelow": "Insert card below",
+      "expandCard": "Expand card",
+      "deleteCard": "Delete card",
+      "duplicateCard": "Duplicate card"
+    }
+  },
+  "calendar": {
+    "toolbar": {
+      "config": "Calendar config",
+      "startDateField": "Start date field",
+      "endDateField": "End date field",
+      "titleField": "Title field",
+      "colorField": "Color field",
+      "colorType": "Color display",
+      "customColor": "Customize color",
+      "alignWithRecords": "Align with records"
+    },
+    "placeholder": {
+      "selectColorField": "Select a color field"
+    },
+    "dialog": {
+      "startDate": "Start date",
+      "endDate": "End date",
+      "notAdd": "Not add",
+      "addDateField": "Add date fields",
+      "content": "Create a calendar view schedule, and the table needs to have two date fields: start date and end date"
+    },
+    "moreLinkText": "Show all {{count}} records"
+  },
+  "menu": {
+    "insertRecordAbove": "Insert <input /> record above",
+    "insertRecordBelow": "Insert <input /> record below",
+    "copyCells": "Copy cells",
+    "deleteRecord": "Delete record",
+    "deleteAllSelectedRecords": "Delete all selected records",
+    "editField": "Edit field",
+    "duplicateField": "Duplicate field",
+    "insertFieldLeft": "Insert left",
+    "insertFieldRight": "Insert right",
+    "freezeUpField": "Freeze up to this field",
+    "hideField": "Hide field",
+    "deleteField": "Delete field",
+    "deleteAllSelectedFields": "Delete all selected fields",
+    "filterField": "Filter by this field",
+    "sortField": "Sort by this field",
+    "groupField": "Group by this field",
+    "downloadAllAttachments": "Download all files",
+    "autoFill": "Generate",
+    "groupMenuTitle": "Group menu",
+    "expandGroup": "Expand this group and its sub-groups",
+    "collapseGroup": "Collapse this group and its sub-groups",
+    "expandAllGroups": "Expand all groups",
+    "collapseAllGroups": "Collapse all groups"
+  },
+  "connection": {
+    "title": "Database connection",
+    "description": "You can access the database directly through the database connection, including all the tables under the current base",
+    "noPermission": "You don't have permission to access the database",
+    "connectionCountTip": "The maximum number of database connections is <b>{{max}}</b> and the current connections is <b>{{current}}</b>",
+    "createFailed": "Please ensure that the PUBLIC_DATABASE_PROXY environment variable is set correctly",
+    "helpLink": "https://www.anxinlirong.com"
+  },
+  "view": {
+    "addRecord": "Add record",
+    "searchView": "Search view...",
+    "dragToolTip": "Automatic sorting is turned on, manual drag is not available",
+    "insertToolTip": "Automatic sorting is turned on, insert with order is not available",
+    "action": {
+      "rename": "Rename view",
+      "duplicate": "Duplicate view",
+      "delete": "Delete view",
+      "lock": "Lock view",
+      "unlock": "Unlock view",
+      "enable": "Enable"
+    },
+    "category": {
+      "table": "Grid view",
+      "form": "Form view",
+      "kanban": "Kanban view",
+      "gallery": "Gallery view",
+      "calendar": "Calendar view"
+    },
+    "crash": {
+      "title": "Crash!",
+      "description": "This view is broken. If the refresh still fails, please contact us. contact@anxinlirong.com"
+    },
+    "addPluginView": "Add plugin view",
+    "search": {
+      "field_one": "{{name}}",
+      "field_other": "fields({{length}})"
+    },
+    "locked": {
+      "tip": "This view is locked. You can enable personal mode to edit view options, and the changes will only take effect for yourself."
+    },
+    "noView": "No view"
+  },
+  "lastModifiedTime": "Last modified time",
+  "lastModify": "Last modify: ",
+  "pasteNewRecords": {
+    "title": "Do you want to add multiple records?",
+    "description": "The {{count}} records will be added to the table."
+  },
+  "tableTrash": {
+    "title": "Table trash",
+    "resourceType": "Resource type",
+    "deletedResource": "Deleted resource"
+  },
+  "plugin": {
+    "recent": "Recents",
+    "more": "Explore more..."
+  },
+  "pluginPanel": {
+    "empty": {
+      "description": "No plugin panels have been added yet."
+    },
+    "createPluginPanel": {
+      "button": "Create a plugin panel",
+      "title": "Create a plugin panel"
+    },
+    "namePlaceholder": "Enter a plugin panel name"
+  },
+  "addPlugin": "Add plugin",
+  "pluginContextMenu": {
+    "mangeButton": "Manage plugins",
+    "manage": "Manage your Context menu plugins",
+    "noPlugin": "No Context menu plugins",
+    "delete": "Delete",
+    "deleteDescription": "Are you sure you want to delete this plugin?"
+  },
+  "permission": {
+    "cell": {
+      "deniedRead": "You don't have permission to view this cell",
+      "deniedUpdate": "You don't have permission to update this cell"
+    }
+  },
+  "aiChat": {
+    "tool": {
+      "getTableFields": "Get table fields",
+      "getTablesMeta": "Get tables meta",
+      "sqlQuery": "Execute SQL query",
+      "generateScriptAction": "Generate script action",
+      "getScriptInput": "Get script input",
+      "getTeableApi": "Get API",
+      "dataVisualization": "Data visualization",
+      "updateBase": "Update database info",
+      "args": "Arguments",
+      "result": "Result",
+      "thinking": "Thinking...",
+      "toBeConfirmed": "To be confirmed",
+      "errorMessage": "Error message",
+      "confirm": "Confirm",
+      "createRecordsSuccess": "Successfully created {{count}} record(s)",
+      "createRecordsFailed": "Failed to create records",
+      "updateRecordsSuccess": "Successfully updated {{count}} record(s)",
+      "updateRecordsFailed": "Failed to update records",
+      "generatingRecords": "Generating {{count}} record(s)...",
+      "creatingRecords": "Creating {{count}} record(s)...",
+      "updatingRecords": "Updating {{count}} record(s)...",
+      "recordsPreview": "Records preview",
+      "andMoreRecords": "And {{count}} more...",
+      "unknownError": "Unknown error",
+      "recordIds": "Record IDs",
+      "records": "record(s)",
+      "viewAll": "View All",
+      "showLess": "Show Less",
+      "generatingData": "Generating data...",
+      "generatingUpdates": "Generating updates...",
+      "recordsGenerated": "{{count}} record(s) generated",
+      "recordsCount": "Records({{count}})",
+      "fieldsCount": "Fields({{count}})",
+      "fieldsGenerated": "{{count}} field(s) generated",
+      "updatedProperties": "Updated ({{count}})",
+      "configured": "configured",
+      "recordsToUpdate": "{{count}} record(s) to update",
+      "showingLast": "last {{count}}",
+      "recordLabel": "Record",
+      "statusGenerating": "Generating...",
+      "statusCreating": "Creating...",
+      "statusUpdating": "Updating...",
+      "statusCreated": "Created",
+      "statusUpdated": "Updated",
+      "getApps": {
+        "title": "App List",
+        "loading": "Loading apps...",
+        "foundApps": "Found {{count}} app(s)",
+        "noApps": "No apps found in this base",
+        "openApp": "Open App"
+      },
+      "generateApp": {
+        "title": "App Builder",
+        "creatingApp": "Creating app",
+        "updatingApp": "Updating app",
+        "generatingApp": "Generating app",
+        "generating": "Generating...",
+        "openApp": "Open App",
+        "viewProgress": "View Progress",
+        "newApp": "New App",
+        "building": "Building..."
+      },
+      "generateAutomation": {
+        "title": "Automation Builder",
+        "creatingAutomation": "Creating automation",
+        "updatingAutomation": "Updating automation",
+        "generatingAutomation": "Building automation",
+        "building": "Building...",
+        "openAutomation": "Open Automation",
+        "viewProgress": "View Progress",
+        "testResults": "Test Results",
+        "triggerTest": "Trigger",
+        "actionTest": "Action {{index}}"
+      },
+      "htmlPreview": {
+        "preview": "Preview",
+        "code": "Code",
+        "download": "Download",
+        "downloadHtml": "HTML",
+        "downloadImage": "Image (PNG)",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "fullscreen": "Fullscreen",
+        "exitFullscreen": "Exit Fullscreen",
+        "downloadSuccess": "Image downloaded successfully",
+        "downloadFailed": "Failed to capture image",
+        "iframeFailed": "Failed to capture: iframe not accessible"
+      },
+      "loadAttachment": {
+        "title": "Load Attachment",
+        "loading": "Loading attachment",
+        "failed": "Failed to load attachment",
+        "empty": "No attachments loaded",
+        "modeNative": "AI Vision",
+        "modeNativeDesc": "Loaded into AI native context",
+        "modeExtracted": "Text Extracted",
+        "modeExtractedDesc": "File content parsed and extracted as text for analysis",
+        "visionLoaded": "Loaded for visual analysis",
+        "pdfLoaded": "Loaded for PDF analysis",
+        "textExtracted": "{{chars}} characters extracted",
+        "contextLoaded": "Loaded to AI context",
+        "truncated": "Truncated",
+        "preview": "Preview"
+      },
+      "textExtract": {
+        "title": "Text Extract",
+        "loading": "Extracting text",
+        "failed": "Failed to extract text",
+        "empty": "No text extracted",
+        "preview": "Preview",
+        "truncated": "Truncated",
+        "previews": "previews",
+        "chars": "{{chars}} chars",
+        "totalCharacters": "Total: {{chars}} characters",
+        "filesTruncated": "({{count}} file(s) truncated)"
+      },
+      "importExcel": {
+        "title": "Import Excel",
+        "loading": "Processing file...",
+        "failed": "Import failed",
+        "suggestions": "Suggestions",
+        "analyzeComplete": "Analysis Complete",
+        "worksheets": "Worksheets",
+        "columns": "columns",
+        "importComplete": "Import Complete",
+        "stageAnalyze": "Analyzing",
+        "stageImport": "Importing"
+      }
+    },
+    "tools": {
+      "getTeableApi": "Get Teable API",
+      "readFiles": "Read Files",
+      "writeFile": "Write File",
+      "deleteFiles": "Delete Files",
+      "listFiles": "List Files",
+      "addDependencies": "Add Dependencies",
+      "checkBuildErrors": "Check Build Errors",
+      "lint": "Lint Code"
+    },
+    "fallback": {
+      "previewLoadFailed": "Preview load failed",
+      "retry": "Retry {{count}} time",
+      "chatAborted": "aborted"
+    },
+    "preview": {
+      "deletedTable": "Deleted table",
+      "deletedView": "Deleted view",
+      "deletedField": "Deleted field",
+      "deletedRecords": "Deleted records"
+    },
+    "agentName": {
+      "tableOperatorAgent": "Table agent",
+      "viewOperatorAgent": "View agent",
+      "fieldOperatorAgent": "Field agent",
+      "recordOperatorAgent": "Record agent",
+      "buildBaseAgent": "Build base agent",
+      "buildAutomationAgent": "Build automation agent"
+    },
+    "confirm": {
+      "toBeConfirmed": "To be confirmed",
+      "deleteWarning": "Are you sure you want to delete?"
+    },
+    "action": {
+      "createTable": "Create table",
+      "updateTable": "Update table",
+      "updateTableName": "Update table name",
+      "deleteTable": "Delete table",
+      "createView": "Create view",
+      "updateView": "Update view",
+      "updateViewName": "Update view name",
+      "deleteView": "Delete view",
+      "createField": "Create field",
+      "createAiField": "Create AI field",
+      "createLinkField": "Create link field",
+      "createLookupField": "Create lookup field",
+      "createRollupField": "Create rollup field",
+      "createFormulaField": "Create formula field",
+      "deleteField": "Delete field",
+      "updateField": "Update field",
+      "createRecord": "Create record",
+      "createRecords": "Create records",
+      "deleteRecord": "Delete record",
+      "updateRecord": "Update record",
+      "updateRecords": "Update records",
+      "updateBase": "Update database info",
+      "planTask": "Plan task...",
+      "generateTables": "Generate tables",
+      "generatePrimaryFields": "Generate primary fields",
+      "generateFields": "Generate fields",
+      "generateViews": "Generate views",
+      "generateRecords": "Generate records",
+      "generateAIFields": "Generate AI fields",
+      "generateLinkFields": "Generate link fields",
+      "generateLookupFields": "Generate lookup fields",
+      "generateRollupFields": "Generate rollup fields",
+      "generateFormulaFields": "Generate formula fields",
+      "generateWorkflow": "Generate workflow",
+      "generateTrigger": "Generate trigger",
+      "generateScriptAction": "Generate script action node",
+      "generateSendMailAction": "Generate send mail action node",
+      "generateAction": "Generate action node",
+      "setupAutomationTrigger": "Setup automation trigger",
+      "testAutomationNode": "Test automation node",
+      "activateAutomation": "Activate automation",
+      "executeScript": "Execute script",
+      "wait": "Wait",
+      "initialize": "Initialize environment",
+      "rename": "Generate app name",
+      "buildTest": "Build test",
+      "developTask": "Develop task",
+      "generateSummary": "Generate summary",
+      "previewEnvironment": "Prepare preview environment",
+      "getRelativeData": "Get relative data",
+      "getPreviousNodeOutputVariables": "Get previous node output variables",
+      "getApiJson": "Get API info",
+      "generateScriptAndDependencies": "Generate script and dependencies",
+      "analyzingAttachment": "Analyzing attachment...",
+      "locateResource": "Locate",
+      "goTo": "Go to",
+      "operationSuccess": "Operation completed successfully",
+      "operationFailed": "Operation failed"
+    },
+    "queryTool": {
+      "getRecords": "Query records",
+      "getRecordsWithTable": "Query records · {{tableName}}",
+      "getFields": "Query fields",
+      "getFieldsWithTable": "Query fields · {{tableName}}",
+      "getTables": "Query tables",
+      "getViews": "Query views",
+      "getViewsWithTable": "Query views · {{tableName}}",
+      "sqlQuery": "SQL query",
+      "querying": "Querying...",
+      "queryFailed": "Query failed",
+      "aborted": "Aborted",
+      "noData": "No data returned",
+      "dataFormatError": "Data format error",
+      "unsupportedQueryType": "Unsupported query type: {{toolName}}",
+      "returnedRecords": "Returned {{count}} record(s)",
+      "record": "Record {{index}}",
+      "moreRecords": "... +{{count}} more record(s)",
+      "foundFields": "Found {{count}} field(s)",
+      "moreFields": "... +{{count}} more field(s)",
+      "foundTables": "Found {{count}} table(s)",
+      "moreTables": "... +{{count}} more table(s)",
+      "foundViews": "Found {{count}} view(s)",
+      "moreViews": "... +{{count}} more view(s)",
+      "queryReturned": "Query returned {{rowCount}} row(s) × {{columnCount}} column(s)",
+      "row": "Row {{index}}",
+      "moreRows": "... +{{count}} more row(s)",
+      "getDoc": "Get Doc",
+      "getDocWithTopic": "Get Doc · {{topic}}",
+      "getAutomations": "Query automations",
+      "getAutomation": "Query automation",
+      "getAutomationRuns": "Query automation runs",
+      "foundAutomations": "Found {{count}} automation(s)",
+      "moreAutomations": "... +{{count}} more automation(s)",
+      "foundRuns": "Found {{count}} run(s)",
+      "moreRuns": "... +{{count}} more run(s)",
+      "active": "Active",
+      "trigger": "Trigger",
+      "actions": "{{count}} action(s)",
+      "moreActions": "... +{{count}} more action(s)",
+      "getUserIntegrations": "Check integrations",
+      "connectedIntegrations": "Connected",
+      "availableToConnect": "Available to connect",
+      "connect": "Connect",
+      "noIntegrationsAvailable": "No integrations available",
+      "activateTool": "Activate tools",
+      "webSearch": "Web search",
+      "webSearchResults": "Found {{count}} result(s)",
+      "webSearchCompleted": "Search completed",
+      "searchApi": "Search API",
+      "searchApiWithQuery": "Search API · {{query}}",
+      "noApiFound": "No APIs found",
+      "foundApis": "Found {{count}} API(s)",
+      "totalApis": "Total {{count}} APIs available",
+      "callApi": "Call API",
+      "callApiWithMethod": "{{method}} {{path}}...",
+      "response": "Response",
+      "success": "Success",
+      "failed": "Failed",
+      "inputData": "Input data",
+      "availableNodes": "Available nodes",
+      "hasPreviousCode": "Has existing code",
+      "noInputData": "No input data available"
+    },
+    "showUI": {
+      "connect": "Connect",
+      "connecting": "Connecting...",
+      "connected": "Connected",
+      "connectToUse": "Connect {{provider}} to use in automations",
+      "checkingConnection": "Checking connection status...",
+      "confirm": "Confirm",
+      "confirmed": "Confirmed",
+      "cancel": "Cancel",
+      "cancelled": "Cancelled",
+      "connectionCancelled": "Connection cancelled"
+    },
+    "codeBlock": {
+      "hiddenLines": "{{count}} lines hidden",
+      "collapseCode": "Collapse code",
+      "code": "Code",
+      "preview": "Preview"
+    },
+    "buildFlow": {
+      "progress": "Build progress",
+      "completed": "App build completed",
+      "completedDesc": "All steps completed successfully, app is ready for preview",
+      "stepStatus": {
+        "initializing": "Creating app and initializing environment...",
+        "naming": "Generating app name...",
+        "planning": "Analyzing requirements and planning development...",
+        "developing": "Writing code and implementing features...",
+        "summarizing": "Organizing development results...",
+        "deploying": "Deploying to preview environment...",
+        "testing": "Building test..."
+      },
+      "moduleStatus": {
+        "running": "Running",
+        "completed": "Completed",
+        "error": "Failed",
+        "pending": "Pending"
+      },
+      "toolStatus": {
+        "running": "Running",
+        "completed": "Completed",
+        "error": "Failed"
+      }
+    },
+    "generateScript": {
+      "generateSuccess": "Generate script successfully"
+    },
+    "buildBase": {
+      "title": "Build base",
+      "generateSuccess": "Generate database successfully",
+      "generateError": "Generate database failed"
+    },
+    "buildAutomation": {
+      "title": "Build automation",
+      "generateSuccess": "Generate automation successfully"
+    },
+    "automation": {
+      "created": "Created",
+      "updated": "Updated",
+      "workflow": "Workflow",
+      "trigger": "Trigger",
+      "scriptAction": "Script Action",
+      "workflowLabel": "Workflow",
+      "triggerLabel": "Trigger",
+      "scriptActionLabel": "Script Action",
+      "workflowId": "Workflow",
+      "triggerId": "Trigger",
+      "scriptActionId": "Script Action",
+      "viewAutomation": "View",
+      "navigateToAutomation": "Navigate to automation",
+      "triggerType": {
+        "recordCreated": "Record Created",
+        "recordUpdated": "Record Updated",
+        "recordCreatedOrUpdated": "Record Created or Updated",
+        "formSubmitted": "Form Submitted",
+        "scheduledTime": "Scheduled Time",
+        "buttonClick": "Button Click"
+      },
+      "activated": "Activated",
+      "deactivated": "Deactivated",
+      "discarded": "Changes Discarded",
+      "activateFailed": "Activate Failed",
+      "deactivateFailed": "Deactivate Failed",
+      "discardFailed": "Discard Failed",
+      "scriptUpdated": "Script Updated",
+      "scriptUpdateFailed": "Update Failed",
+      "scriptExecuted": "Script Executed",
+      "scriptExecutionFailed": "Execution Failed",
+      "scriptReady": "Script ready",
+      "executingScript": "Executing script...",
+      "waitedSeconds": "Waited {{seconds}}s",
+      "waitFailed": "Wait failed"
+    },
+    "newChat": "New Chat",
+    "clearChat": "Clear Chat",
+    "expand": "Expand",
+    "history": "History",
+    "close": "Collapse",
+    "clearChatConfirmTitle": "Confirm Clear Chat",
+    "clearChatConfirmDesc": "Current chat content will not be saved. Are you sure you want to clear it?",
+    "dontShowAgain": "Don't show again",
+    "noModel": "No available models",
+    "noHistory": "No chat history",
+    "noFoundHistory": "No chat history found, please start a new conversation",
+    "timeGroup": {
+      "today": "Today",
+      "oneWeek": "One week",
+      "twoWeek": "Two week",
+      "oneMonth": "One month",
+      "other": "Other"
+    },
+    "context": {
+      "button": "Add context",
+      "search": "Add tables",
+      "searchEmpty": "No matching context found",
+      "emptyContext": "No context to add"
+    },
+    "inputPlaceholder": "Describe what you want to do",
+    "thought": "Thinking",
+    "meta": {
+      "timeCostUnit": "s",
+      "timeCostDescription": "Generation time: {{timeCost}}s",
+      "creditDescription": "{{credits}} credits consumed",
+      "tokenDescription": "Tokens used: {{tokens}}",
+      "input": "Input",
+      "output": "Output",
+      "tokens": "Tokens",
+      "totalTimeCost": "Total time cost",
+      "totalCreditCost": "Total credit cost",
+      "customModel": "Custom model",
+      "tokenDetails": "Token Details",
+      "cachedInput": "Cached Input (90% off)",
+      "cacheWrite": "Cache Write",
+      "reasoning": "Reasoning (Thinking)",
+      "taskCompleted": "Task completed"
+    },
+    "dataVisualization": {
+      "error": "Data visualization failed"
+    },
+    "tips": {
+      "modelTips": "Only administrators can configure"
+    },
+    "attachment": {
+      "imageNotSupported": "Image is not supported",
+      "attachmentSizeExceeded": "Attachment size exceeds the limit {{size}}MB"
+    },
+    "suggestions": {
+      "recommend": "Recommended",
+      "ask": "Ask",
+      "analyze": "Analyze",
+      "build": "Build",
+      "title": "How can I help?",
+      "whatCanIDo": "What can I do?",
+      "createOrModifyDatabase": "Create or modify database",
+      "buildAutomations": "Build automations",
+      "buildApps": "Build apps",
+      "buildMeCRM": "Build me a CRM",
+      "addAIField": "Add an AI field to analyze each customer",
+      "createDataAnalysis": "Create me a data analysis report",
+      "emailWhenRecordCreated": "Email me when record created",
+      "syncStatusToSlack": "Sync status updates to Slack",
+      "buildDashboard": "Build a dashboard from this table",
+      "buildLeadCapture": "Build me a lead capture landing page"
+    },
+    "buildApp": {
+      "thinking": {
+        "duration": "Thought for {{duration}}s"
+      },
+      "task": {
+        "searching": "Searching \"{{query}}\"",
+        "readingFiles": "Reading files:",
+        "foundResults": "Found {{count}} results",
+        "noIssuesFound": "No issues found",
+        "defaultTitle": "Task"
+      },
+      "codeProject": {
+        "defaultTitle": "Code Project"
+      }
+    }
+  },
+  "upload": {
+    "panelUploading": "Uploading {{count}} files",
+    "panelFailed": "{{count}} files failed",
+    "panelCompleted": "{{count}} files completed",
+    "statusFailed": "Failed",
+    "statusCompleted": "Completed"
+  }
+}
